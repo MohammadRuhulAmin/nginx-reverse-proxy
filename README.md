@@ -4,13 +4,19 @@
 - Stopping nginx server :
 
 ```shell
-sudo nginx -s stop
+    sudo nginx -s stop
 
 ```
 
 - Starting nginx server
 
 ```shell
-sudo nginx 
+    sudo nginx 
 ```
 
+- openssl configuration :
+
+```shell
+    openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx-selfsigned.key -out nginx-selfsigned.crt
+
+```

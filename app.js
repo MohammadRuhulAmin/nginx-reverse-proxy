@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-const replicaApp = process.env.APP_NAME;
+const replicaApp = process.env.APP_NAME || 'base project';
 
 app.set('view engine', 'ejs');
 
